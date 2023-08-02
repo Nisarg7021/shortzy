@@ -23,7 +23,7 @@ setup(
     long_description=long_description,
     packages=find_packages(),
     install_requires=['aiohttp',],
-    url="https://github.com/kevinnadar22/shortzy",
+    url="https://github.com/Nisarg7021/shortzy1",
     keywords=['python', 'droplink', 'gplink', 'url-shortener', 'earn money', 'shareus', 'adlinkfly'],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
