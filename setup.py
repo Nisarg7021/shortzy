@@ -13,7 +13,7 @@ DESCRIPTION = 'An Unofficial Asynchronous Python version of Adlinkfly and Altern
 
 # Setting up
 setup(
-    name="shortzy1",
+    name="shortzy",
     version=VERSION,
     author="Kevin Nadar",
     license="MIT",
@@ -23,7 +23,7 @@ setup(
     long_description=long_description,
     packages=find_packages(),
     install_requires=['aiohttp',],
-    url="https://github.com/Nisarg7021/shortzy1",
+    url="https://github.com/Nisarg7021/shortzy",
     keywords=['python', 'droplink', 'gplink', 'url-shortener', 'earn money', 'shareus', 'adlinkfly'],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
