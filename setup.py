@@ -13,7 +13,7 @@ DESCRIPTION = 'An Unofficial Asynchronous Python version of Adlinkfly and Altern
 
 # Setting up
 setup(
-    name="shortzy",
+    name="shortzy1",
     version=VERSION,
     author="Kevin Nadar",
     license="MIT",
