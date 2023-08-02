@@ -1,6 +1,7 @@
 from .shareus import Shareus
 from .adlinkfly import Adlinkfly
 from .shareusio import ShareusIO
+from .offerzone import offerzone
 
 
 class Shortzy:
@@ -20,7 +21,9 @@ class Shortzy:
         if not self.api_key:
             raise Exception("API key not provided")
 
-        if self.base_site == "shareus.in":
+        if  self.base_site == "offerzone.makeshort.in":
+            self.shortener = offerzone(api_key, base_site=base_site)
+        elif self.base_site == "shareus.in":
             self.shortener = Shareus(api_key, base_site=base_site)
         elif self.base_site == "shareus.io":
             self.shortener = ShareusIO(api_key, base_site=base_site)
