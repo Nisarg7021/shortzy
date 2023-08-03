@@ -5,7 +5,7 @@ import aiohttp
 
 
 class offerzone:
-    def __init__(self, api_key: str, base_site: str = "droplink.co"):
+    def __init__(self, api_key: str, base_site: str = "offerzone.makeshort.in"):
         self.api_key = api_key
         self.base_site = base_site
         self.base_url = f"https://{self.base_site}/api"
@@ -67,7 +67,7 @@ class offerzone:
             base_site=self.base_site,
             api_key=self.api_key,
             url=url,
-            custom=alias
+            alias=alias
         )
 
     async def bulk_convert(
