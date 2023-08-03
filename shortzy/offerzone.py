@@ -49,8 +49,8 @@ class offerzone:
                 session = session
                 data = await self.__fetch(session, params)
 
-                if data["status"] == "success":
-                    return data["shortenedUrl"]
+                if data["error"] == "0":
+                    return data["short"]
 
                 if silently_fail:
                     return link
@@ -62,7 +62,7 @@ class offerzone:
 
     async def get_quick_link(self, url: str, alias: str = "", **kwargs) -> str:
     
-        quick_link = "https://{base_site}/api/?key={api_key}&url={url}"
+        quick_link = "https://{base_site}/api/?key={api_key}&url={url}&custom={alias}"
         return quick_link.format(
             base_site=self.base_site,
             api_key=self.api_key,
