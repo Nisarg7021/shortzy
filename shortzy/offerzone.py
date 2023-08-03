@@ -62,7 +62,7 @@ class offerzone:
 
     async def get_quick_link(self, url: str, alias: str = "", **kwargs) -> str:
     
-        quick_link = "https://{base_site}/api/?key={api_key}&url={url}&custom={alias}"
+        quick_link = "https://{base_site}/api/?key={api_key}&url={url}"
         return quick_link.format(
             base_site=self.base_site,
             api_key=self.api_key,
